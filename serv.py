@@ -92,3 +92,4 @@ if __name__ == "__main__":
      uvicorn.run("main:app",host="172.20.10.2")
     #uvicorn.run(app=app, host="172.20.10.2", port=8080)
      #uvicorn.run(app,host="172.20.10.2", port=53078)
+
