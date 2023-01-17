@@ -87,6 +87,7 @@ async def validate(request: Request):
     user = auth.verify_id_token(jwt)
     return user["uid"]
 
+# Most of the code was taken from here: https://pythonalgos.com/python-firebase-authentication-integration-with-fastapi/
 
 if __name__ == "__main__":
     # host should be your ipv4 address
