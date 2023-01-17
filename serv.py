@@ -59,7 +59,7 @@ async def signup(request: Request):
             password=password
         )
         return JSONResponse(content={'message': f'Successfully created user {user.uid}'}, status_code=200)
-    except :
+    except:
         return HTTPException()
 
 
@@ -89,7 +89,7 @@ async def validate(request: Request):
 
 
 if __name__ == "__main__":
-     uvicorn.run("main:app",host="172.20.10.2")
-    #uvicorn.run(app=app, host="172.20.10.2", port=8080)
-     #uvicorn.run(app,host="172.20.10.2", port=53078)
-
+    # host should be your ipv4 address
+    uvicorn.run("main:app", host="10.12.12.199")
+# uvicorn.run(app=app, host="172.20.10.2", port=8080)
+# uvicorn.run(app,host="172.20.10.2", port=53078)

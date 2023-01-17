@@ -89,5 +89,6 @@ async def validate(request: Request):
 
 
 if __name__ == "__main__":
-    uvicorn.run("main:app")
+    # host should be your ipv4 address
+    uvicorn.run("main:app", host="10.12.12.199")
     # uvicorn.run(main:app,host="127.0.0.1", port=53078)
